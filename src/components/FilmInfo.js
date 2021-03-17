@@ -1,5 +1,6 @@
 const FilmInfo = (props) => {
     return (
+
         <section>
             <div id="bg-color">
                 <p id="para">{props.title}</p>
@@ -8,8 +9,12 @@ const FilmInfo = (props) => {
                 <p>{props.duration}</p>
                 <p>{props.rate}</p>
                 <p>{props.genre}</p>
+                <aside>
+                    {props.genre.map((genre, j) => <p key={j} id="list">{genre}</p>)}
+                </aside>
             </div>
         </section>
+
     );
 }
 

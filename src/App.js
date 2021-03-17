@@ -1,5 +1,5 @@
 import './App.css';
-import FilmItem from './components/FilmItem'
+import FilmItem from './components/FilmItem';
 function App() {
   return (
     <div className="App">

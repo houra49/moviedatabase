@@ -20,3 +20,6 @@ div{
 #bg-color:hover{
   box-shadow:steelblue  3px 3px 3px 3px;
 }
+#buttons{
+  margin:4% auto;
+}
