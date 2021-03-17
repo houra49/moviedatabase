@@ -2034,7 +2034,7 @@ class FilmItem extends Component {
     }
     render() {
         return (
-            <section>
+            <div>
                 <Button
                     handleAscending={this.handleAscending}
                     handleDescending={this.handleDescending}
@@ -2042,17 +2042,20 @@ class FilmItem extends Component {
                     handleAlphabetAsc={this.handleAlphabetAsc}
                     handleAlphabetDes={this.handleAlphabetDes}
                 />
-                {this.state.myMovies.map((elt, i) => <FilmInfo
-                    key={i}
-                    title={elt.title}
-                    year={elt.year}
-                    director={elt.director}
-                    duration={elt.duration}
-                    rate={elt.rate}
-                    genre={elt.genre}
-                />)}
+                <section>
 
-            </section>
+                    {this.state.myMovies.map((elt, i) => <FilmInfo
+                        key={i}
+                        title={elt.title}
+                        year={elt.year}
+                        director={elt.director}
+                        duration={elt.duration}
+                        rate={elt.rate}
+                        genre={elt.genre}
+                    />)}
+
+                </section>
+            </div>
         );
     }
 }

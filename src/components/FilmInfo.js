@@ -8,7 +8,6 @@ const FilmInfo = (props) => {
                 <p>{props.director}</p>
                 <p>{props.duration}</p>
                 <p>{props.rate}</p>
-                <p>{props.genre}</p>
                 <aside>
                     {props.genre.map((genre, j) => <p key={j} id="list">{genre}</p>)}
                 </aside>
